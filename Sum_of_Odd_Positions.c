@@ -1,19 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,i,cnt=0;
     scanf("%d",&n);
-    int a[n],i,s=0;
+    int arr[n];
     for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d",&arr[i]);
     }
     for(i=0;i<n;i++)
     {
-        if(i%2==1)
+        if(i%2!=0)
         {
-            s=s+a[i];
+            cnt=cnt+arr[i];
         }
     }
-    printf("%d",s);
+    printf("%d",cnt);
 }
